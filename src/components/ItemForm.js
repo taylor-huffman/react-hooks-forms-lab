@@ -33,12 +33,12 @@ function ItemForm({ onItemFormSubmit }) {
     <form className="NewItem" onSubmit={handleSubmit}>
       <label>
         Name:
-        <input type="text" name="name" onChange={handleSetItemName} />
+        <input type="text" name="name" onChange={handleSetItemName} value={itemName} />
       </label>
 
       <label>
         Category:
-        <select name="category" onChange={handleSetItemCategory}>
+        <select name="category" onChange={handleSetItemCategory} value={itemCategory} >
           <option value="Produce">Produce</option>
           <option value="Dairy">Dairy</option>
           <option value="Dessert">Dessert</option>
